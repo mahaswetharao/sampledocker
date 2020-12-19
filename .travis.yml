@@ -7,3 +7,15 @@ before_install:
 
 script:
   - docker-compose up -d
+
+#deploy:
+#  provider: elasticbeanstalk
+#  region: "us-west-2"
+#  app: "docker-sample"
+#  env: "Docker-env"
+#  bucket-name: "bucket.name.us.west.a3812093812"
+#  bucket-path: "docker-sample"
+#  on:
+#    branch: main
+#  access_key_id: $AWS_ACCESS_KEY
+#  secret_access_key: $AWS_SECRET_KEY
