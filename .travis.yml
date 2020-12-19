@@ -7,4 +7,4 @@ before_install:
   - docker run -d redis
 
 script:
-  - docker run sample/docker python3 test_sample.py
+  - docker run sample/docker-sample python3 test_sample.py
