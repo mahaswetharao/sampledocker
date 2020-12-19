@@ -10,7 +10,7 @@ class BasicTests(unittest.TestCase):
         """Initialize the redis and flask app"""
 
         app.r = redis.Redis(
-                    host='redis-server',
+                    host='localhost',
                     port=6379)
         self.app = app.app.test_client()
         app.r.set("count", "0")

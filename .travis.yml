@@ -4,7 +4,7 @@ services:
 
 before_install:
   - docker build -t sample/docker-sample -f Dockerfile.dev .
+  - docker run -d redis
 
 script:
-  - docker run redis
   - docker run sample/docker python3 test_sample.py
