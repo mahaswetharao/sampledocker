@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 
 r = redis.Redis(
-        host='localhost',
+        host='redis-server',
         port=6379)
         # password='password')
 
